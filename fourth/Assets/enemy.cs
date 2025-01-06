@@ -8,7 +8,7 @@ public class enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        StartCoroutine(coroutineWhile());
     }
 
     // Update is called once per frame
@@ -19,4 +19,16 @@ public class enemy : MonoBehaviour
             Instantiate(bullet, this.transform.position, Quaternion.identity);
         }
     }
+
+    IEnumerator coroutineWhile()
+    {
+        while (true)
+        {
+            int randomTime = Random.Range(1, 10);
+            Debug.Log(randomTime + "초 뒤 발사!");
+            Instantiate(bullet, this.transform.position, Quaternion.identity);
+            yield return new WaitForSeconds(randomTime);
+        }
+    }
+
 }

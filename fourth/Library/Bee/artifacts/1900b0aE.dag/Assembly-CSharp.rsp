@@ -374,7 +374,12 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/bullet.cs"
 "Assets/enemy.cs"
+"Assets/Invoke.cs"
+"Assets/My Coroutin.cs"
+"Assets/player.cs"
+"Assets/StudyScript.cs"
 "Assets/target.cs"
+"Assets/Test.cs"
 -langversion:9.0
 /deterministic
 /optimize+
